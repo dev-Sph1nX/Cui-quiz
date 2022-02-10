@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.MakeKit_title_Activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To make your kit, firstly name it :"
+        android:layout_margin="16dp"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/make_kit_title_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please type your kit's name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <Button
+        android:id="@+id/make_kit_title_next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

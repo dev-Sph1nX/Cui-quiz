@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.MakeKit_questions_Activity"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make your kit, now insert questions in your kit :"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"/>
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="16dp"
+        android:padding="8dp"/>
+    <TextView
+        android:id="@+id/make_kit_number_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number of question : ?"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/make_kit_questions_question"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_green"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:hint="Question" />
+
+    <EditText
+        android:id="@+id/make_kit_questions_answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/light_blue"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:hint="Answer 1"/>
+    <EditText
+        android:id="@+id/make_kit_questions_answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/light_blue"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:hint="Answer 2"/>
+    <EditText
+        android:id="@+id/make_kit_questions_answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/light_blue"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:hint="Answer 3"/>
+    <EditText
+        android:id="@+id/make_kit_questions_answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/light_blue"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:hint="Answer 4"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right answer :"
+            android:layout_marginRight="16dp"/>
+        <Spinner
+            android:id="@+id/make_kit_questions_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/make_kit_questions_nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert and continue"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/make_kit_questions_finishbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert and finish your kit"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

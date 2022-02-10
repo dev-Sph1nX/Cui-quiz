@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.MakeKit_NumberOfQuestion_Activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To finish your kit, how many questions do you want to answer each time ?"
+        android:layout_margin="16dp"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/make_kit_number_question_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please type your number of questions"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <TextView
+        android:id="@+id/make_kit_number_question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number of question : ?"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/make_kit_finish_it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish it"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

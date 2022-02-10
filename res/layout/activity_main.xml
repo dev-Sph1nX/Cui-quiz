@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/main_textview_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="8dp" />
+    <EditText
+        android:id="@+id/main_edittext_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please type your name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a kit"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+    <LinearLayout
+        android:id="@+id/main_list_kit"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" />
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/main_button_delete_kit"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="112dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/ic_action_moins" />
+
+        <Button
+            android:id="@+id/main_button_make_own_kit"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/ic_action_name"
+            android:gravity="center" />
+    </RelativeLayout>
+
+
+</LinearLayout>
